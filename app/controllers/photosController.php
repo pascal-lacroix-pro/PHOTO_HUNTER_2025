@@ -15,3 +15,14 @@ function showAction(PDO $connexion, string $id): void
     include '../app/views/photos/show.php';
     $content = ob_get_clean();
 }
+
+function indexAction(PDO $connexion): void
+{
+    include_once '../app/models/photosModel.php';
+    $photos = PhotosModel\findAll($connexion);
+
+    global $content;
+    ob_start();
+    include '../app/views/photos/index.php';
+    $content = ob_get_clean();
+}
