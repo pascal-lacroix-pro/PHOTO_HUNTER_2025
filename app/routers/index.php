@@ -5,6 +5,11 @@
 if (isset($_GET['photos'])) :
     include_once '../app/routers/photos.php';
 
+// ROUTES DES AUTHORS
+// PATTERN COMMUN: ?authors=xxx
+elseif (isset($_GET['authors'])) :
+    include_once '../app/routers/authors.php';
+
 // ROUTE PAR DÉFAUT
 // PATTERN: /
 // CTRL: PagesController

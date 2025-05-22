@@ -18,7 +18,7 @@
                     Photos
                 </a>
                 <a
-                    href="photographers.html"
+                    href="?authors=index"
                     class="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">
                     Photographers
                 </a>
